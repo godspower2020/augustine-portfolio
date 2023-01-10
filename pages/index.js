@@ -10,36 +10,36 @@ import { Navbar, Contact, NavigationDots, SocialMedia } from '../components'
 
 const Home = ( {classNames, heroTitles, heroItems, abouts, skills, experience, testimonials} ) => {
   
-  const hero = [
-    { 
-      title: 'Frontend Developer.', 
-      color: '#313bac',
-    },
-    { 
-      title: 'UI/UX Engineer.',
-      color: 'green', 
-    },
-    {
-      title: 'Designer.',
-      color: 'red',   
-    }
-  ];
+  // const hero = [
+  //   { 
+  //     title: 'Frontend Developer.', 
+  //     color: '#313bac',
+  //   },
+  //   { 
+  //     title: 'UI/UX Engineer.',
+  //     color: 'green', 
+  //   },
+  //   {
+  //     title: 'Designer.',
+  //     color: 'red',   
+  //   }
+  // ];
 
-  const [heroTitle, setHeroTitle] = useState(hero[0].title)
+  // const [heroTitle, setHeroTitle] = useState(hero[0].title)
   // const [animateHeroTitle, setAnimateHeroTitle] = useState({ y: 0, opacity: 1 }) 
 
-  useEffect(() => {
-    const heroTitleSlider = () => {
-      for(let i = 0; i < hero.length; i++){
-        setInterval(() => {
-          setHeroTitle(hero[i].title)
-          // setAnimateHeroTitle([{y: 100, opacity: 0}])
-        }, 3000);
-      }
-    }
+  // useEffect(() => {
+  //   const heroTitleSlider = () => {
+  //     for(let i = 0; i < hero.length; i++){
+  //       setInterval(() => {
+  //         setHeroTitle(hero[i].title)
+  //         // setAnimateHeroTitle([{y: 100, opacity: 0}])
+  //       }, 3000);
+  //     }
+  //   }
 
-    setHeroTitle(heroTitleSlider())
-  }, [])
+  //   setHeroTitle(heroTitleSlider())
+  // }, [])
   // // const [activeTitle, setActiveTitle] = useState({})
   // // const [showActiveTitle, setShowActiveTitle] = useState(false)
 
@@ -83,7 +83,7 @@ const Home = ( {classNames, heroTitles, heroItems, abouts, skills, experience, t
       <div id='noscroll' className={`app ${classNames}`}>
         <Navbar />
         <SocialMedia />
-        <NavigationDots />
+        {/* <NavigationDots /> */}
         <div id="Hero" className='app__container'>
           <div className='app__wrapper app__flex'>
             <div className="app__header app__flex">
